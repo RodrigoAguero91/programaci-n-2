@@ -8,29 +8,48 @@ package javaapplication27.TrabajoPractico5.Ejercicio3;
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
 public class Libro {
-    private final String titulo;
-    private final String isbn;
-    private final Autor autor;        
-    private final Editorial editorial; 
 
-    public Libro(String titulo, String isbn, Autor autor, Editorial editorial) {
+    private String titulo;
+    private String isbn;
+    private Autor autor;
+    private Editorial editorial;
+
+    public Libro(String titulo, String isbn, Editorial editorial) {
         this.titulo = titulo;
         this.isbn = isbn;
-        this.autor = autor;
         this.editorial = editorial;
     }
 
-    String getTitulo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getTitulo() {
+        return titulo;
     }
 
-    Object getAutor() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
-    Object getEditorial() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getIsbn() {
+        return isbn;
     }
 
-    
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public Autor getAutor() {
+        return autor;
+    }
+
+    public void setAutor(Autor autor) {
+        this.autor = autor;
+    }
+
+    public Editorial getEditorial() {
+        return editorial;
+    }
+
+    public void setEditorial(Editorial editorial) {
+        this.editorial = editorial;
+    }
+
 }

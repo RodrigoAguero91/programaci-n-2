@@ -7,31 +7,49 @@ package javaapplication27.TrabajoPractico5.Ejercicio6;
  * Aprendé más Java en mi canal: https://www.youtube.com/c/CharlyCimino
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
-import java.time.LocalDateTime;
-
 public class Reserva {
-    private final LocalDateTime fechaHora;
-    private final Cliente cliente; 
-    private final Mesa mesa;       
 
-    public Reserva(LocalDateTime fechaHora, Cliente cliente, Mesa mesa) {
-        this.fechaHora = fechaHora;
-        this.cliente = cliente;
+    private String fecha;
+    private String hora;
+    private Cliente cliente;
+    private Mesa mesa;
+
+    public Reserva(String fecha, String hora, Mesa mesa) {
+        this.fecha = fecha;
+        this.hora = hora;
         this.mesa = mesa;
     }
 
-    Object getCliente() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getFecha() {
+        return fecha;
     }
 
-    Object getMesa() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
-    String getFechaHora() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getHora() {
+        return hora;
     }
 
-    
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public Mesa getMesa() {
+        return mesa;
+    }
+
+    public void setMesa(Mesa mesa) {
+        this.mesa = mesa;
+    }
+
 }
-

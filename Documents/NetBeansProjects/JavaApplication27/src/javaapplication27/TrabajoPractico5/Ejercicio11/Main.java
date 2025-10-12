@@ -8,11 +8,13 @@ package javaapplication27.TrabajoPractico5.Ejercicio11;
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
 public class Main {
+
     public static void main(String[] args) {
         Artista artista = new Artista("Luis Fonsi", "Pop");
         Cancion cancion = new Cancion("Despacito", artista);
-        Reproductor reproductor = new Reproductor();
+        Reproductor r = new Reproductor();
+        r.reproducir(cancion); 
 
-        reproductor.reproducir(cancion);
     }
 }
+

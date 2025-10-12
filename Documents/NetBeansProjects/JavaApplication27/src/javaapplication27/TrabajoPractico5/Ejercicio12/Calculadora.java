@@ -8,8 +8,10 @@ package javaapplication27.TrabajoPractico5.Ejercicio12;
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
 public class Calculadora {
+
     public void calcular(Impuesto impuesto) {
-        System.out.println(" para " +
-                "Calculando impuesto de $" + impuesto.getMonto() + impuesto.getContribuyente().getNombre());
+        System.out.println("Cálculo de impuesto de: " + impuesto.getContribuyente().getNombre());
+        System.out.println("Monto: $" + impuesto.getMonto());
     }
+
 }

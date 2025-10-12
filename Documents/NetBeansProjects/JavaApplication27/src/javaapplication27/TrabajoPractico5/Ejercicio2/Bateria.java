@@ -9,14 +9,30 @@ package javaapplication27.TrabajoPractico5.Ejercicio2;
  */
 
 public class Bateria {
-    private final String modelo;
-    private final int capacidad;
+
+    private String modelo;
+    private int capacidad;
 
     public Bateria(String modelo, int capacidad) {
         this.modelo = modelo;
         this.capacidad = capacidad;
     }
 
-    
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getCapacidad() {
+        return capacidad;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
 }
 

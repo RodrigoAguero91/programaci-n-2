@@ -8,26 +8,52 @@ package javaapplication27.TrabajoPractico5.Ejercicio10;
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
 public class CuentaBancaria {
-    private final String cbu;
-    private final double saldo;
-    private final ClaveSeguridad clave; 
-    private final Titular titular;      
 
-    public CuentaBancaria(String cbu, double saldo, ClaveSeguridad clave, Titular titular) {
+    private String cbu;
+    private double saldo;
+    private final ClaveSeguridad clave;
+    private Titular titular;
+
+    public CuentaBancaria(String cbu, double saldo, String codigo, String ultimaModificacion) {
         this.cbu = cbu;
         this.saldo = saldo;
-        this.clave = clave;
+        this.clave = new ClaveSeguridad(codigo, ultimaModificacion);
+    }
+
+    CuentaBancaria(String string, double d, ClaveSeguridad clave, Titular titular) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public String getCbu() {
+        return cbu;
+    }
+
+    public void setCbu(String cbu) {
+        this.cbu = cbu;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public ClaveSeguridad getClave() {
+        return clave;
+    }
+
+    public Titular getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Titular titular) {
         this.titular = titular;
-        titular.setCuenta(this); 
+        if (titular != null && titular.getCuenta() != this) {
+            titular.setCuenta(this);
+        }
     }
 
-    String getCbu() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    Object getClave() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    
 }
+

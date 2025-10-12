@@ -8,21 +8,33 @@ package javaapplication27.TrabajoPractico5.Ejercicio11;
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
 public class Cancion {
-    private final String titulo;
-    private final Artista artista; 
+
+    private String titulo;
+    private Artista artista;
 
     public Cancion(String titulo, Artista artista) {
         this.titulo = titulo;
         this.artista = artista;
     }
 
-    String getTitulo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Cancion() {
     }
 
-    Object getArtista() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getTitulo() {
+        return titulo;
     }
 
-    
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public Artista getArtista() {
+        return artista;
+    }
+
+    public void setArtista(Artista artista) {
+        this.artista = artista;
+    }
+
 }
+

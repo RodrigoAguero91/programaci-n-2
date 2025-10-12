@@ -8,9 +8,11 @@ package javaapplication27.TrabajoPractico5.Ejercicio14;
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
 public class Main {
+
     public static void main(String[] args) {
-        Proyecto proyecto = new Proyecto("Video institucional", 5);
+        Proyecto proyecto = new Proyecto("Promo institucional", 3);
         EditorVideo editor = new EditorVideo();
-        editor.exportar("MP4", proyecto);
+        editor.exportar("MP4", proyecto); 
+
     }
 }

@@ -8,17 +8,33 @@ package javaapplication27.TrabajoPractico5.Ejercicio13;
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
 public class CodigoQR {
-    private final String valor;
-    private final Usuario usuario; 
+
+    private String valor;
+    private Usuario usuario;
+
+    public CodigoQR() {
+    }
 
     public CodigoQR(String valor, Usuario usuario) {
         this.valor = valor;
         this.usuario = usuario;
     }
 
-    String getValor() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getValor() {
+        return valor;
     }
 
-    
+    public void setValor(String valor) {
+        this.valor = valor;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
 }
+
