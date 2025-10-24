@@ -1,0 +1,2 @@
+Esta linea es leída por el Ejercicio 3.
+Esta segunda linea es leída por el Ejercicio 5 (try-with-resources).
