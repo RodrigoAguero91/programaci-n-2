@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class EjerciciosExcepciones {
     
-    // 1. División segura (ArithmeticException)
+    
     public static void divisionSegura(Scanner sc) {
         try {
             System.out.print("Ingrese numerador: ");
@@ -13,7 +13,7 @@ public class EjerciciosExcepciones {
             System.out.print("Ingrese divisor: ");
             int num2 = sc.nextInt();
             
-            sc.nextLine(); // Consumir el salto de línea pendiente
+            sc.nextLine(); 
             
             int resultado = num1 / num2; 
             System.out.println("Resultado: " + resultado);
@@ -22,11 +22,11 @@ public class EjerciciosExcepciones {
             System.err.println("Error 1: No se puede dividir por cero. " + e.getMessage());
         } catch (java.util.InputMismatchException e) {
             System.err.println("Error 1: Por favor, ingrese solo números enteros.");
-            sc.nextLine(); // Consumir la entrada inválida
+            sc.nextLine(); 
         }
     }
     
-    // 2. Conversión de cadena a número (NumberFormatException)
+    
     public static void convertirCadena(Scanner sc) {
         System.out.print("Ingrese un texto para convertir a int: ");
         String texto = sc.nextLine();
@@ -40,11 +40,11 @@ public class EjerciciosExcepciones {
     }
     
     
-    // 3. Lectura de archivo (FileNotFoundException)
+    
     public static void lecturaArchivo(String ruta) {
         try {
             File archivo = new File(ruta);
-            // Usar try-with-resources con Scanner para cierre automático
+            
             try (Scanner lector = new Scanner(archivo)) { 
                 System.out.println("Contenido del archivo (Eje 3):");
                 while (lector.hasNextLine()) {
@@ -57,9 +57,9 @@ public class EjerciciosExcepciones {
     }
     
     
-    // 5. Uso de try-with-resources (IOException)
+    
     public static void leerConTryWithResources(String ruta) {
-        // ERROR CORREGIDO: Se eliminó un 'new' repetido.
+        
         try (BufferedReader br = new BufferedReader(new FileReader(ruta))) {
             String linea;
             System.out.println("Contenido (Try-with-resources Eje 5):");

@@ -14,11 +14,9 @@ import javaapplication27.TrabajoPractico8.Interfaces.TarjetaCredito;
 public class Main {
     public static void main(String[] args) {
         
-        // --- INICIO DE MODIFICACIÓN NECESARIA ---
-        // DEBE REEMPLAZAR LA RUTA DE EJEMPLO POR SU RUTA ABSOLUTA REAL.
-        // SUGERENCIA: USE BARRA DIAGONAL (/) PARA EVITAR PROBLEMAS DE ESCAPE.
+       
         String RUTA_ARCHIVO_PRUEBA; 
-        // --- FIN DE MODIFICACIÓN NECESARIA ---
+       
         RUTA_ARCHIVO_PRUEBA = "C:\\Users\\ADMIN\\Documents\\NetBeansProjects\\JavaApplication27\\src\\javaapplication27\\TrabajoPractico8\\test.txt";
         
         try (
@@ -54,7 +52,7 @@ public class Main {
             
             System.out.println("\nEjercicio 3: Lectura de Archivo (Ruta debe ser válida)");
             
-            // Se usa la ruta absoluta
+            
             EjerciciosExcepciones.lecturaArchivo(RUTA_ARCHIVO_PRUEBA);
             
             System.out.println("\nEjercicio 4: Excepción Personalizada");
@@ -66,7 +64,7 @@ public class Main {
             }
             
             System.out.println("\nEjercicio 5: Uso de Try-with-resources");
-            // Se usa la ruta absoluta
+            
             EjerciciosExcepciones.leerConTryWithResources(RUTA_ARCHIVO_PRUEBA);
             System.out.println("--- PRUEBAS COMPLETAS ---");
             }
